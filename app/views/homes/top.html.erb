@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<head>
+    <%=csrf_meta_tags %>
+    <% csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'homes', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <title>Bookers</title>
+</head>
+<body>
+  <div class= "home-top">
+  <h1>ようこそ<strong>Bookers</strong>へ！</h1>
+  </div>
+     <div class ="main">
+     <p><strong>Bookers</strong>では、様々な書物に関するあなたの意見や</p>
+
+     <p>印象を共有し交換することができます</p>
+     </div>
+    <div class = "btn">
+   <%= link_to "START","/books" %>
+   </div>
+</body>
+</html>
